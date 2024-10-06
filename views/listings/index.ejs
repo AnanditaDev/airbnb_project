@@ -28,44 +28,71 @@
     margin-top: 2rem;
     padding: 0.5rem 2rem 0.5rem 2rem;
     margin-left: 20rem;
-   
    }
+@media (max-width:770px){
+        .tax-toggle{
+         margin-left: 25%;
+         width:300px
+        }
+      }
+      @media (min-width:780px) and (max-width:1300px){
+       .tax-toggle{
+        margin-left: 0px;
+        height: 3rem;
+        padding: 0.5rem 0 0.5rem 0;
+        border:1px solid black;
+       }
+       .form-check-label{
+        display: none;
+       }
+      }
 </style>
 
-   <div id="filters">
-        <div class="filter">
+   <div id="filters" class="navbar navbar-expand-md">
+
+    <button class="navbar-toggler" type="button" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#navbarNavAltMarkup" >
+      <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+    </div>
+
+        <div class="filter navbar-nav">
             <div><i class="fa-solid fa-fire"></i></div>
             <p>Trending</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-solid fa-house"></i></div>
             <p>Rooms</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-brands fa-fort-awesome"></i></i></div>
             <p>Castles</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-solid fa-cow"></i></i></div>
             <p>Farms</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-solid fa-person-swimming"></i></i></div>
             <p>Swiming Pool</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-solid fa-building"></i></i></div>
             <p>Top Cities</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-solid fa-tent"></i></div>
             <p>Camping</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-regular fa-snowflake"></i></div>
             <p>Arctic</p>
         </div>
-        <div class="filter">
+        <div class="filter navbar-nav">
             <div><i class="fa-solid fa-sailboat"></i></div>
             <p>Boat</p>
         </div>
